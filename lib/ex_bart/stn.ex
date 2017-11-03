@@ -1,5 +1,5 @@
 defmodule ExBart.Stn do
-  import ExBart.Client, only: [request: 3]
+  import ExBart.Client, only: [request: 2, request: 3]
 
   def stnaccess(options) do
     request(:stn, :stnaccess, options)
@@ -9,7 +9,7 @@ defmodule ExBart.Stn do
     request(:stn, :stninfo, options)
   end
 
-  def stns(options) do
-    request(:stn, :stns, options)
+  def stns do
+    request(:stn, :stns)
   end
 end
